@@ -16,8 +16,15 @@ Outro ponto importante é que toda alteração feita no arquivo .html deve ser s
 <br>
 <br>
 <script>
+
+	 function skipTwoLines() {
+		alert("I skipped two lines to you");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
 	document.write("A idade do Rodrigo é:");
-	document.write("<br>");
+	skipTwoLines();
 	document.write("18" + 20);
 </script>
 <br>
@@ -35,20 +42,22 @@ document.write(2024 - 32);
 <br>
 <br>
 <script>
-	document.write((20+10+30)/3 + "<br>", "<br>");
+	var skipTwoLines = "<br><br>";
+
+	document.write((20+10+30)/3 + skipTwoLines);
 	document.write("Rodrigo Nasceu em " + (2024 - 32) + "<br>");
 	document.write("Flavio Nasceu em " + (2016 - 39) + "<br>");
 	document.write("Barney nasceu em " + (2016 - 30) + "<br>");
 </script>
 <br>
 <script>
- document.write("A média do valor gasto com as viagens é");
+ document.write("A média do valor gasto com as viagens é: ");
  document.write((200 + 100 + 300 + 400) /4 );
- document.write("<br>", "<br>");
+ document.write(skipTwoLines);
  document.write("18" + "2");
  document.write("<br>");
  document.write("18 + 2");
- document.write("<br>", "<br>");
+ document.write(skipTwoLines);
  document.write("Eu acertei: " + 15/50 * 100 + "%");
 </script>
 <br>
@@ -67,33 +76,31 @@ document.write(2024 - 32);
 	var idadeBarney = 26;
 
 	var media = (idadeFlavio + idadeRodrigo + idadeBarney)/3;
-	document.write('A média das idades é: ' + Math.round(media) + "<br>", "<br>");
+	document.write('A média das idades é: ' + Math.round(media) + skipTwoLines);
 	
 	var nome = "Rodrigo";
-	document.write("A idade de " + nome + " é: " + idadeRodrigo + "<br>", "<br>"); 
+	document.write("A idade de " + nome + " é: " + idadeRodrigo + skipTwoLines); 
 
 </script>
-############################# H4 ###################################
-<br>
-<br>
+############################# H4 ###############################
+<br><br>
 <script>
 	var n = 3
 	document.write("O resultado da formula é: " + n * (10 / 20) );
 </script>
 <br>
 <br>
-############################# H5 ###################################
-<br>
+############################# H5 ###############################
+<br><br>
 <script>
 	var minhaIdade = 20;
-	document.write("Eu nasci em: " + (2016 - minhaIdade) );
+	document.write("Eu nasci em: " + (2016 - minhaIdade) + skipTwoLines );
 </script>
-<br>
-############################# H6 ###################################
+############################# H6 ###############################
 <br>
 <br>
 <script>
-	document.write("Tabuada de 8: " + "<br>", "<br>");
+	document.write("Tabuada de 8: " + skipTwoLines);
 	var tabuada = 8;
 		document.write(tabuada + " vezes 1 é " + tabuada * 1 + "<br>");
 		document.write(tabuada + " vezes 2 é " + tabuada * 2 + "<br>");
@@ -106,11 +113,11 @@ document.write(2024 - 32);
 		document.write(tabuada + " vezes 9 é " + tabuada * 9 + "<br>");
 		document.write(tabuada + " vezes 10 é " + tabuada * 10 + "<br>");
 	</script>
-############################# H7 ###################################
+############################# H7 ###############################
 <br>
 <br>
 <script>
-	document.write("Tabuada de 2: " + "<br>", "<br>");
+	document.write("Tabuada de 2: " + skipTwoLines);
 	var tabuada = 2;
 		document.write(tabuada + " vezes 1 é " + tabuada * 1 + "<br>");
 		document.write(tabuada + " vezes 2 é " + tabuada * 2 + "<br>");
@@ -123,11 +130,11 @@ document.write(2024 - 32);
 		document.write(tabuada + " vezes 9 é " + tabuada * 9 + "<br>");
 		document.write(tabuada + " vezes 10 é " + tabuada * 10 + "<br>");
 	</script>
-############################# H8 ###################################
+############################# H8 ###############################
 <br>
 <br>
 <script>
-document.write("Tabuada de 3: " + "<br>", "<br>" );
+document.write("Tabuada de 3: " + skipTwoLines );
 var tabuada = 3;
     document.write(tabuada + " vezes 1 é " + tabuada * 1 + "<br>");
 	document.write(tabuada + " vezes 2 é " + tabuada * 2 + "<br>");
@@ -149,10 +156,10 @@ var tabuada = 3;
 	var idadePerola = 13;
 
 	var media = (idadeLinda + idadeGuaraciara + idadePerola) / 3;
-	document.write("A media da idade das minhas filhas é: " + Math.round(media / 3) + "<br>", "<br>");
+	document.write("A media da idade das minhas filhas é: " + Math.round(media / 3) + skipTwoLines);
 
 </script>
-############################# H9 ###################################
+############################# H9 ###############################
 <br>
 <br>
 <script>
@@ -161,19 +168,54 @@ var tabuada = 3;
 	var idadePerola = 13;
 
 	var totalIdades = idadeLinda + idadeGuaraciara + idadePerola;
-	document.write( Math.round(totalIdades / 3) + "<br>", "<br");
+	document.write( Math.round(totalIdades / 3) + skipTwoLines );
 </script>
 <br>
 <br>
 <script>
-	document.write("Resultado: " + Math.round(10/3));
+	document.write("Resultado: " + Math.round(10/3) + skipTwoLines);
 </script>
 <br>
 <br>
+<script>
+
+var idade1 = 10;
+var idade2 = 20;
+var idade3 = 12;
+
+    document.write("A média das idades é: ");
+	document.write("<br>");
+    document.write( (idade1 + idade2 + idade3) / 3 + "<br>");
+
+</script>
 <br>
+<script>
+	document.write("<h3>Álcool ou Gasolina?</h3>");
+	var tank = 40
+	var gasolina = 480
+	var alcool = 300
+	document.write("Meu carro consome: " + gasolina / tank + " litros de gasolina por KM rodado " + "<br>");
+	document.write("Meu carro consome: " + alcool / tank + " litros de álcool por KM rodado" + "<br>");
+</script>
 <br>
+############################# H10 ##############################
 <br>
+<h3>Ácool ou Gasolina? Alura Resolution</h3>
+<script>
+	var tanque = 40;
+	var caminhoComGasolina = 480;
+	var consumoDeGasolina = caminhoComGasolina/tanque;
+
+	var caminhoComAlcool = 300;
+	var consumoDeAlcool= caminhoComAlcool/tanque;
+
+	document.write("O consumo de Gasolina é: " + consumoDeGasolina + "Km/L");
+	document.write("<br>");
+	document.write("O consumo de Álcool é: " + consumoDeAlcool + "Km/L");
+	document.write(skipTwoLines);
+</script>
 <br>
+
 <br>
 <br>
 <br>
