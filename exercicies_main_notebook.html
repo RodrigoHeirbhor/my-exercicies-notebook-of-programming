@@ -5,7 +5,7 @@
 </head>
 <body>	 
 
-<h1>Seja bem-vindo</h1>
+<h1>You are Welcome</h1>
 
 </body>
 
@@ -17,15 +17,24 @@ Another important point is that every change maof to the .html file must be save
 <br>
 <script>
 
+     alert("Welcome to my first html file");
+
 	 function skipTwoLines() {
-		alert("I skipped two lines to you");
+	    
 		document.write("<br>");
 		document.write("<br>");
 	}
+
+	 function display(phrase) {
+
+        document.write(phrase);
+		skipTwoLines();
+	 }
+
 	document.write("Here is a sample of common error: " + "<br>");
 	document.write("Rodrigo's age is: ");
 	skipTwoLines();
-	document.write("18" + 20);
+	display("18" + 20);
 </script>
 <br>
 <h3>
@@ -36,119 +45,105 @@ JavaScript changes both values ​​to text when one value is text and the othe
 <br>
 <br>
 <script>
-document.write("Rodrigo was born in: ");
-document.write(2024 - 32);
+display("Rodrigo was born in: ");
+display(2024 - 32);
 </script>
-<br>
-<br>
 <script>
-	var skipTwoLines = "<br><br>";
-
-	document.write((20+10+30)/3 + skipTwoLines);
-	document.write("Rodrigo was born in: " + (2024 - 32) + "<br>");
-	document.write("Flavio was born in: " + (2016 - 39) + "<br>");
-	document.write("Barney was born in: " + (2016 - 30) + "<br>");
+	display((20+10+30)/3);
+	display("Rodrigo was born in: " + (2024 - 32) + "<br>");
+	display("Flavio was born in: " + (2016 - 39) + "<br>");
+	display("Barney was born in: " + (2016 - 30) + "<br>");
 </script>
-<br>
 <script>
- document.write("The average amount spent on my travel was: ");
- document.write((200 + 100 + 300 + 400) /4 );
- document.write(skipTwoLines);
- document.write("18" + "2");
- document.write("<br>");
- document.write("18 + 2");
- document.write(skipTwoLines);
- document.write("I got it right: " + 15/50 * 100 + "%");
+ display("The average amount spent on my travel was: ");
+ display((200 + 100 + 300 + 400) /4 );
+ display("18" + "2");
+ display("18 + 2");
+ display("I got it right: " + 15/50 * 100 + "%");
 </script>
-<br>
-<br>
 <script>
 	var ano = 2024;
 
-	document.write("Flávio has: " + (ano - 1977) + " years " + "<br>");
-	document.write("Rodrigo has:  " + (ano - 1992) + " years " + "<br>");
+	display("Flávio has: " + (ano - 1977) + " years ");
+	display("Rodrigo has:  " + (ano - 1992) + " years ");
 	
 	ano = 2020;
-	document.write("Barney has " + (ano - 1994) + " years " + "<br>");
+	display("Barney has " + (ano - 1994) + " years ");
 
 	var ageFlavio = 47;
 	var ageRodrigo = 32;
 	var ageBarney = 26;
 
 	var average = (ageFlavio + ageRodrigo + ageBarney)/3;
-	document.write("The average age amount is: "  + Math.round(average) + skipTwoLines);
+	display("The average age amount is: "  + Math.round(average));
 	
 	var name = "Rodrigo";
-	document.write("The age of " + name + " is: " + ageRodrigo + skipTwoLines); 
+	display("The age of " + name + " is: " + ageRodrigo); 
 
 </script>
-############################# H4 ###############################
+############################# H4 ##############################
 <br><br>
 <script>
 	var n = 3
-	document.write("The result of the formula is: " + n * (10 / 20) );
+	display("The result of the formula is: " + n * (10 / 20) );
 </script>
 <br>
-<br>
-############################# H5 ###############################
+############################# H5 ##############################
 <br><br>
 <script>
 	var myAge = 20;
-	document.write("I was born in: " + (2016 - myAge) + skipTwoLines );
+	display("I was born in: " + (2016 - myAge));
 </script>
-############################# H6 ###############################
-<br>
-<br>
+############################# H6 ##############################
+<br><br>
 <script>
-	document.write("Math table of 8: " + skipTwoLines);
+	display("Math table of 8: ");
 	var mathTable = 8;
-		document.write(mathTable + " times 1 is " + mathTable * 1 + "<br>");
-		document.write(mathTable + " times 2 is " + mathTable * 2 + "<br>");
-		document.write(mathTable + " times 3 is " + mathTable * 3 + "<br>");
-		document.write(mathTable + " times 4 is " + mathTable * 4 + "<br>");
-		document.write(mathTable + " times 5 is " + mathTable * 5 + "<br>");
-		document.write(mathTable + " times 6 is " + mathTable * 6 + "<br>");
-		document.write(mathTable + " times 7 is " + mathTable * 7 + "<br>");
-		document.write(mathTable + " times 8 is " + mathTable * 8 + "<br>");
-		document.write(mathTable + " times 9 is " + mathTable * 9 + "<br>");
-		document.write(mathTable + " times 10 is " + mathTable * 10 + "<br>");
+		display(mathTable + " times 1 is " + mathTable * 1);
+		display(mathTable + " times 2 is " + mathTable * 2);
+		display(mathTable + " times 3 is " + mathTable * 3);
+		display(mathTable + " times 4 is " + mathTable * 4);
+		display(mathTable + " times 5 is " + mathTable * 5);
+		display(mathTable + " times 6 is " + mathTable * 6);
+		display(mathTable + " times 7 is " + mathTable * 7);
+		display(mathTable + " times 8 is " + mathTable * 8);
+		display(mathTable + " times 9 is " + mathTable * 9);
+		display(mathTable + " times 10 is " + mathTable * 10);
 	</script>
-############################# H7 ###############################
+############################# H7 ##############################
 <br>
 <br>
 <script>
-	document.write("mathTable of 2: " + skipTwoLines);
+	display("Math table of 2: ");
 	var mathTable = 2;
-		document.write(mathTable + " times 1 is " + mathTable * 1 + "<br>");
-		document.write(mathTable + " times 2 is " + mathTable * 2 + "<br>");
-		document.write(mathTable + " times 3 is " + mathTable * 3 + "<br>");
-		document.write(mathTable + " times 4 is " + mathTable * 4 + "<br>");
-		document.write(mathTable + " times 5 is " + mathTable * 5 + "<br>");
-		document.write(mathTable + " times 6 is " + mathTable * 6 + "<br>");
-		document.write(mathTable + " times 7 is " + mathTable * 7 + "<br>");
-		document.write(mathTable + " times 8 is " + mathTable * 8 + "<br>");
-		document.write(mathTable + " times 9 is " + mathTable * 9 + "<br>");
-		document.write(mathTable + " times 10 is " + mathTable * 10 + "<br>");
+		display(mathTable + " times 1 is " + mathTable * 1);
+		display(mathTable + " times 2 is " + mathTable * 2);
+		display(mathTable + " times 3 is " + mathTable * 3);
+		display(mathTable + " times 4 is " + mathTable * 4);
+		display(mathTable + " times 5 is " + mathTable * 5);
+		display(mathTable + " times 6 is " + mathTable * 6);
+		display(mathTable + " times 7 is " + mathTable * 7);
+		display(mathTable + " times 8 is " + mathTable * 8);
+		display(mathTable + " times 9 is " + mathTable * 9);
+		display(mathTable + " times 10 is " + mathTable * 10);
 	</script>
-############################# H8 ###############################
+############################# H8 ##############################
 <br>
 <br>
 <script>
-document.write("mathTable of 3: " + skipTwoLines );
+display("Math table of 3: ");
 var mathTable = 3;
-    document.write(mathTable + " times 1 is " + mathTable * 1 + "<br>");
-	document.write(mathTable + " times 2 is " + mathTable * 2 + "<br>");
-	document.write(mathTable + " times 3 is " + mathTable * 3 + "<br>");
-	document.write(mathTable + " times 4 is " + mathTable * 4 + "<br>");
-	document.write(mathTable + " times 5 is " + mathTable * 5 + "<br>");
-	document.write(mathTable + " times 6 is " + mathTable * 6 + "<br>");
-	document.write(mathTable + " times 7 is " + mathTable * 7 + "<br>");
-	document.write(mathTable + " times 8 is " + mathTable * 8 + "<br>");
-	document.write(mathTable + " times 9 is " + mathTable * 9 + "<br>");
-	document.write(mathTable + " times 10 is " + mathTable * 10 + "<br>");
+    display(mathTable + " times 1 is " + mathTable * 1);
+	display(mathTable + " times 2 is " + mathTable * 2);
+	display(mathTable + " times 3 is " + mathTable * 3);
+	display(mathTable + " times 4 is " + mathTable * 4);
+	display(mathTable + " times 5 is " + mathTable * 5);
+	display(mathTable + " times 6 is " + mathTable * 6);
+	display(mathTable + " times 7 is " + mathTable * 7);
+	display(mathTable + " times 8 is " + mathTable * 8);
+	display(mathTable + " times 9 is " + mathTable * 9);
+	display(mathTable + " times 10 is " + mathTable * 10);
 </script>
-<br>
-<br>
 <script>
 
 	var ageLinda = 12;
@@ -156,10 +151,10 @@ var mathTable = 3;
 	var agePerola = 13;
 
 	var average = (ageLinda + ageGuaraciara + agePerola) / 3;
-	document.write("The average amount of my daughters is: " + Math.round(average / 3) + skipTwoLines);
+	display("The average amount of my daughters is: " + Math.round(average / 3));
 
 </script>
-############################# H9 ###############################
+############################# H9 ##############################
 <br>
 <br>
 <script>
@@ -168,38 +163,31 @@ var mathTable = 3;
 	var agePerola = 13;
 
 	var totalAge = ageLinda + ageGuaraciara + agePerola;
-	document.write( Math.round(totalAge / 3) + skipTwoLines );
+	display( Math.round(totalAge / 3));
 </script>
-<br>
 <br>
 <script>
-	document.write("Result: " + Math.round(10/3) + skipTwoLines);
+	display("Result: " + Math.round(10/3));
 </script>
-<br>
 <br>
 <script>
 
-var Age1 = 10;
-var Age2 = 20;
-var Age3 = 12;
+var age1 = 10;
+var age2 = 20;
+var age3 = 12;
 
-    document.write("The average amount of the ages is: ");
-	document.write("<br>");
-    document.write( (age1 + age2 + age3) / 3 + "<br>");
-
+    display("The average amount of the ages is: ");
+    display( (age1 + age2 + age3) / 3);
 </script>
-<br>
 <script>
 	document.write("<h3>Alcohol or Gasoline?</h3>");
 	var fuelTank = 40
 	var gasoline = 480
 	var alcohol = 300
-	document.write("My car consumes: " + gasoline / fuelTank + " liters of gasoline per km driven " + "<br>");
-	document.write("My car consumes: " + alcohol / fuelTank + " liters of alcohol per km driven" + "<br>");
+	display("My car consumes: " + gasoline / fuelTank + " liters of gasoline per km driven ");
+	display("My car consumes: " + alcohol / fuelTank + " liters of alcohol per km driven ");
 </script>
-<br>
-############################# H10 ##############################
-<br>
+############################# H10 #############################
 <h3>Alcohol or Gasoline? Alura Resolution</h3>
 <script>
 	var fuelTank = 40;
@@ -209,16 +197,7 @@ var Age3 = 12;
 	var pathWithAlcohol = 300;
 	var consumesOfAlcohol= pathWithAlcohol/fuelTank;
 
-	document.write("The Gasoline consumes is: " + consumesOfGasoline + "Km/L");
-	document.write("<br>");
-	document.write("The Alcohol consumes is: " + consumesOfAlcohol + "Km/L");
-	document.write(skipTwoLines);
+	display("The Gasoline consumes is: " + consumesOfGasoline + "Km/L");
+	display("The Alcohol consumes is: " + consumesOfAlcohol + "Km/L");
 </script>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
 </html>
