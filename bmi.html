@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta charset="utf-8">
+    </head>
+<body>
+	<h1>
+		<!-- BMI is Body Mass Index on Brazil it is the IMC-->
+		<big>BMI Calculation</big>
+    </h1>
+</body>
+<br>
+<script>
+
+	function skipTwoLines() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function display(phrase) {
+
+		document.write(phrase);
+		skipTwoLines();
+	}
+
+	var weightRodrigo = 80;
+	var heightRodrigo = 1.70;
+
+	var bmiRodrigo = weightRodrigo / (heightRodrigo * heightRodrigo);
+
+	display("The Rodrigo's BMI is: " + Math.round(bmiRodrigo));
+
+	var friendWeigh = 68;
+	var friendHeight = 1.72;
+	var bmiFriend = friendWeigh / (friendHeight * friendHeight);
+	display("The BMI of my friend is: " + Math.round(bmiFriend)); 
+</script>
+
+<h2>Reduced BMI Function Version</h2>
+
+<script>
+
+function skipTwoLines() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function display(phrase) {
+
+		document.write(phrase);
+		skipTwoLines();
+	}
+
+	function bmiCalculation(height, weigh) {
+
+		var imc = weigh / (height * height);
+		display("The BMI calculation is: " + Math.round(bmi));
+	}
+
+	bmiCalculation(1.70, 80);
+	bmiCalculation(1.72, 68);
+</script>
+	
+<h3>The sum of BMI from two people</h3>
+<script>
+		function bmiCalculation(height1, weigh1, height2, weigh2) {
+			var bmi1 = weigh1 / (height1 * height1);
+			var bmi2 = weigh2 / (height2 * height2);
+			var bmiTotal = bmi1 + bmi2;
+			display("The sum of the bmi's is: " + bmiTotal);
+
+		}
+
+		bmiCalculation(1.70, 80, 1.72, 68);
+
+</script>
+</html>
