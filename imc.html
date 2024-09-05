@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta charset="utf-8">
+    </head>
+<body>
+	<h1>
+		<big>IMC Calculation</big>
+    </h1>
+</body>
+<br>
+<script>
+
+	function skipTwoLines() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function display(phrase) {
+
+		document.write(phrase);
+		skipTwoLines();
+	}
+
+	var weightRodrigo = 80;
+	var heightRodrigo = 1.70;
+
+	var imcRodrigo = weightRodrigo / (heightRodrigo * heightRodrigo);
+
+	display("The Rodrigo's IMC is: " + Math.round(imcRodrigo));
+
+	var friendWeigh = 68;
+	var friendHeight = 1.72;
+	var imcFriend = friendWeigh / (friendHeight * friendHeight);
+	display("The IMC of my friend is: " + Math.round(imcFriend)); 
+</script>
+
+<h2>Reduced IMC Function Version</h2>
+
+<script>
+function skipTwoLines() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function display(phrase) {
+
+		document.write(phrase);
+		skipTwoLines();
+	}
+
+	function imcCalculation(height, weigh) {
+
+		var imc = weigh / (height * height);
+		display("The IMC calculation is: " + Math.round(imc));
+	}
+
+	imcCalculation(1.70, 80);
+	imcCalculation(1.72, 68);
+
+</script>
+</html>
