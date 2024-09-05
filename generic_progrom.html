@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Calcule seu IMC | Calculating your BMI</h1>
+    <!-- <big>My First Generic Program</big> -->
+</head>
+<body>
+    Please input your dada inside the pop-up
+    <br><br>
+    Por Favor insira seus dados no pop-up
+</body>
+<br><br>
+<script>
+    function skipTwoLines() {
+        document.write("<br><br>");
+    }
+
+    function display(phrase) {
+        document.write("phrase");
+        skipTwoLines();
+    }
+
+    function bmiCalculation(height, weigh) {
+        return weigh / (height * height);
+    }
+    var informedHeight = 1.71;
+    var informedWeigh = 68;
+
+    var bmi = bmiCalculation(informedHeight, informedWeigh);
+
+    document.write("The BMI calculated is: " + Math.round(bmi));
+
+</script>
+</html>
