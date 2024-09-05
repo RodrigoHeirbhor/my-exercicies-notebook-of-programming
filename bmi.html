@@ -53,14 +53,15 @@ function skipTwoLines() {
 
 	function bmiCalculation(height, weigh) {
 
-		var imc = weigh / (height * height);
+		var bmi = weigh / (height * height);
 		display("The BMI calculation is: " + Math.round(bmi));
 	}
 
 	bmiCalculation(1.70, 80);
 	bmiCalculation(1.72, 68);
 </script>
-	
+
+	<!-- Bad solution, don't use, it is only for sample purposes -->
 <h3>The sum of BMI from two people</h3>
 <script>
 		function bmiCalculation(height1, weigh1, height2, weigh2) {
@@ -72,6 +73,32 @@ function skipTwoLines() {
 		}
 
 		bmiCalculation(1.70, 80, 1.72, 68);
+</script>
+<h3>Sum of BMI of several people with a <big>correct solution</big></h3>
+<script>
+	function bmiCalculation(height, weigh) {
+		var bmi = weigh / (height * height);
+		return bmi;
+	}
+	var bmiRodrigo = bmiCalculation(1.70, 80);
+	var bmiFriend = bmiCalculation(1.72, 68);
+
+	display(Math.round(bmiRodrigo));
+	display(Math.round(bmiFriend));
+</script>
+<h3>BMI sum with <big>return</big> solution</h3>
+
+<script>
+
+	function bmiCalculation(height, weigh) {
+		
+		return weigh / (height * height);
+	}
+	var bmiRodrigo = bmiCalculation(1.70, 80);
+	var bmiFriend = bmiCalculation(1.72, 68);
+	var bmiTotal = bmiFriend + bmiRodrigo;
+
+	document.write("The sum from the BMI's is: " + bmiTotal);
 
 </script>
 </html>
