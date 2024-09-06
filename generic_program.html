@@ -5,9 +5,9 @@
     <!-- <big>My First Generic Program</big> -->
 </head>
 <body>
-    Please input your dada inside the pop-up
+    Please input your data inside the pop-up
     <br><br>
-    Por Favor insira seus dados no pop-up
+    **Por Favor insira seus dados no pop-up
 </body>
 <br><br>
 <script>
@@ -23,12 +23,14 @@
     function bmiCalculation(height, weigh) {
         return weigh / (height * height);
     }
-    var informedHeight = 1.71;
-    var informedWeigh = 68;
+
+    var name = prompt("Insert your name: ");
+    var informedHeight = prompt(name + ", Insert your height: ");
+    var informedWeigh = prompt(name + ", Insert your weigh: ");
 
     var bmi = bmiCalculation(informedHeight, informedWeigh);
 
-    document.write("The BMI calculated is: " + Math.round(bmi));
+    document.write(name + ", your BMI is: " + Math.round(bmi));
 
 </script>
 </html>

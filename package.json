@@ -1,0 +1,13 @@
+{
+    "name": "my-exercicies-notebook-of-programming",
+    "version": "1.0.0",
+    "description": "Rodrigo's Repository",
+    "scripts": {
+      "macos:run 1": "git status", 
+      "macos:run 2": "git add .",
+      "macos:run 3": "git push origin main",
+      "macos:run 4": "git commit -m Create my-exercicies-notebook-of-programming",
+      "macos:run 5": "git push origin main"
+      
+    }
+}
