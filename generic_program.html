@@ -33,4 +33,43 @@
     document.write(name + ", your BMI is: " + Math.round(bmi));
 
 </script>
+<br><br>
+<h2><big>Function returning other function</big></h2>
+</script>
+
+<meta charset="UTF-8">
+
+<script>
+    function skipTwoLines() {
+
+        document.write("<br><br>");
+    }
+
+    function display(phrase) {
+        document.write(phrase);
+        skipTwoLines();
+    }
+
+    function a(text) {
+
+        return "(" + text + ")";
+    }
+
+    function b(text) {
+
+        return "@" + text + "@";
+    }
+
+    function c(firstName, lastName) {
+
+        return b(firstName + " " + a(lastName));
+
+    }
+
+    var result = c("Rodrigo", "Sá");
+
+    display(result);
+
+</script>
+
 </html>
