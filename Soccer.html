@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta charset="utf-8">
+    </head>
+<body>
+	<h1>
+		<big>Number of wins my club has won</big>
+    </h1>
+</body>
+<br>
+<script>
+
+	function skipTwoLines() {
+		document.write("<br><br>");
+	}
+
+	function display(phrase) {
+
+		document.write(phrase);
+		skipTwoLines();
+	}
+
+	var victories = parseInt(prompt("Insert your victories club number: " ));
+	var gameDraws = parseInt(prompt("Enter the number of game draws."));
+
+	var points = victories * 3 + gameDraws;
+
+//Todo resultado retornado do prompt é sempre um texto, ainda que o usuário tenha digitado um número. É uma boa prática: Sempre que eu queiser que o meu retorno do prompt seja um número, devo usar a função parseInt() por exemplo: var numero = parseInt();
+//A função converte o texto em número
+
+//Every result returned from the prompt is always a text, even if the user has typed a number. It is a good practice: Whenever I want my prompt to return a number, I should use the parseInt() function for example: var number = parseInt();
+//The function converts the text to a number
+
+	display("My club points is " + points);
+
+</script>
+</html>
