@@ -6,7 +6,7 @@
       "macos:status": "git status", 
       "macos:add"   : "git add .",
       "macos:push"  : "git push origin main",
-      "macos:commit": "git commit -m 'Createmy-exercicies-notebook-of-programming'",
+      "macos:commit": "git commit -m 'Create my-exercicies-notebook-of-programming'",
       "macos:update": "git push origin main"
     }
 }
