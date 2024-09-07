@@ -11,13 +11,13 @@
 </body>
 <br>
 </script>
-<h3>The Correct BMI is between 18.5 and 35 accondingly to the World Health Organization</h3>
+<h3>The recommended BMI is between 18.5 and 35 accondingly to the World Health Organization</h3>
 <script>
 	function skipTwoLines() {
 		document.write("<br><br>");
 	}
 	function display(phrase) {
-		document.write("phrase");
+		document.write(phrase);
 	}
 	function bmiCalculation(height, weigh) {
 		
@@ -30,7 +30,20 @@
 
 	var bmi = bmiCalculation(userHeight, userWeigh);
 
-	document.write(name + "Your BMI is: " + Math.round(bmi));
+	document.write(name + ", your BMI is " + Math.round(bmi));
 
+		if(bmi < 18.5) {
+			display(" You are bellow of the recommended 🥶 ");
+		}
+
+		if(bmi > 35) {
+			display(" You are above the recommended 😬 ");
+		}
+
+		if(bmi >= 18.5) {
+			if(bmi <= 35) {
+				display(", congratulations, your BMI is excellent! 😃 ");
+			}
+		}
 </script>
 </html>
