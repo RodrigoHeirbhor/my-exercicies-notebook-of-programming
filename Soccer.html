@@ -26,13 +26,24 @@
 
 	var points = victories * 3 + gameDraws;
 
+	display("Your club points is " + points);
+//insert 1 and in the next pop-up insert 25 to return 28 as result
+	if(points > 28) {
+	display("Your club is better than last year 😃.");
+	}
+	if(points < 28) {
+	display("Your club is worse than last year 😞.");
+	}
+	if(points == 28) {
+	display("Your club is the same as last year 🙂.");
+	}
+
+	display("See you next 🤝​ ");
 //Todo resultado retornado do prompt é sempre um texto, ainda que o usuário tenha digitado um número. É uma boa prática: Sempre que eu queiser que o meu retorno do prompt seja um número, devo usar a função parseInt() por exemplo: var numero = parseInt();
 //A função converte o texto em número
 
 //Every result returned from the prompt is always a text, even if the user has typed a number. It is a good practice: Whenever I want my prompt to return a number, I should use the parseInt() function for example: var number = parseInt();
 //The function converts the text to a number
-
-	display("My club points is " + points);
-
 </script>
+
 </html>
