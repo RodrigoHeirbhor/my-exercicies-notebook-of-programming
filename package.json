@@ -2,7 +2,7 @@
     "name": "my-exercicies-notebook-of-programming",
     "version": "1.0.0",
     "description": "Rodrigo's Repository",
-    "scripts": {
+     "scripts": {
       "macos:status": "git status", 
       "macos:add"   : "git add .",
       "macos:push"  : "git push origin main",

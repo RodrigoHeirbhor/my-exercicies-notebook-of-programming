@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<meta charset="utf-8">
+    </head>
+<body>
+	<h1>
+		<!-- BMI is Body Mass Index on Brazil it is the IMC-->
+		<big>BMI Calculation</big>
+    </h1>
+</body>
+<br>
+</script>
+<h3>The Correct BMI is between 18.5 and 35 accondingly to the World Health Organization</h3>
+<script>
+	function skipTwoLines() {
+		document.write("<br><br>");
+	}
+	function display(phrase) {
+		document.write("phrase");
+	}
+	function bmiCalculation(height, weigh) {
+		
+		return weigh / (height * height);
+	}
+	
+	var name = prompt("Insert your name: ");
+	var userHeight = prompt(name + ", Inserty your height ");
+	var userWeigh = prompt(name + ", Insert your weigh ");
+
+	var bmi = bmiCalculation(userHeight, userWeigh);
+
+	document.write(name + "Your BMI is: " + Math.round(bmi));
+
+</script>
+</html>
