@@ -33,17 +33,15 @@
 	document.write(name + ", your BMI is " + Math.round(bmi));
 
 		if(bmi < 18.5) {
-			display(" You are bellow of the recommended 🥶 ");
+			display(", caution, you are bellow of the recommended 🥶 ");
 		}
 
 		if(bmi > 35) {
-			display(" You are above the recommended 😬 ");
+			display(", take care, you are above the recommended 😬 ");
 		}
 
-		if(bmi >= 18.5) {
-			if(bmi <= 35) {
+		if(bmi >= 18.5 && bmi <= 35) {
 				display(", congratulations, your BMI is excellent! 😃 ");
 			}
-		}
 </script>
 </html>
