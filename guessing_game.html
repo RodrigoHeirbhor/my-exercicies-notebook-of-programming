@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html= lang="en">
+    <head>
+<h1>My Guessing Game</h1>
+<h3><big>Welcome</big></h3>
+    </head>
+<body>
+<script>
+function skipTwoLines() {
+    document.write("<br><br>");
+}
+function display(phrase){
+    document.write(phrase);
+    skipTwoLines();
+}
+
+var thoughtNumber = Math.round(Math.random() * 10);
+//console.log(thoughtNumber);
+
+var kickBluff = parseInt(prompt(" Type your kick number! "));
+
+if(kickBluff == thoughtNumber) {
+    display(" You got it right! ");
+} else {
+    display("You made a mistake, the number that was thought is: " + thoughtNumber);
+}
+
+</script>
+</body>
+<br><br>
+<h3>Tells whether the number inserted by the user in the prompt is greater or less than the one thought by the computer</h3><br><br>
+<script>
+//Diz se o número digitado pelo usuário no promt é maior ou menor que o pensado
+// pelo computador
+        function skipTwoLines() {
+
+document.write("<br>");
+}
+
+function display(phrase) {
+
+document.write(phrase);
+skipTwoLines();
+}
+
+function draw(n) {
+
+return Math.round(Math.random() * n);
+}    
+
+var thoughtNumber = draw(10);
+
+
+var kickBluff = parseInt(prompt("I've thought about it. What do you think it is? "));
+
+if(kickBluff == thoughtNumber) {
+
+display("Wow! You got it right, because I thought in the " + thoughtNumber);
+} else {
+
+if(kickBluff > thoughtNumber) {
+
+    display("You missed! Your number guessed is higher than the number I had thought!");
+
+} else {
+
+    display("You missed! Your guessed number is lower than the number I had thought! ");
+}
+
+}
+</script>
+</html
