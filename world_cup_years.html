@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>All years that had World Cup</h1>
+</body>
+<br><br>
+<script>
+    function skipTwoLines() {
+        document.write("<br><br>");
+    }
+
+    function display(phrase) {
+        document.write(phrase);
+        skipTwoLines();
+    }
+
+    var limit = parseInt(prompt("Insert a limit date "));
+    var cupYear = 1930;
+
+//nunca escreva true em um while pois ele trava o navegador em um
+//loop de repetição infinito
+//never write true in a while statement as it locks the browser in
+//an infinite loop
+
+    while(cupYear <= limit) {
+        display("There was a World Cup in " + cupYear );
+        cupYear = cupYear + 4;
+    }
+
+    display("FIM");
+
+</script>
+</html>
