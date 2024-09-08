@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var loginRegistered = "alura";
+    var passwordRegistered = "alura321";
+
+    var maximumAttempts = 3;
+    var currentAttempt = 1;
+
+    while(currentAttempt <= maximumAttempts) {
+
+        var loginInformed = prompt("Insert your login");
+        var passwordInformed = prompt("Insert your password");
+
+        if( loginRegistered == loginInformed && passwordRegistered == passwordInformed ) {
+
+            alert("Welcome to the sistem, " + loginInformed);
+
+            currentAttempt = maximumAttempts; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+            //got it right, so I spend all the attempts to get out of the loop. Down there it will increment + 1!
+
+        } else {
+
+            if (currentAttempt == 3) {
+                alert("Allowed number of attempts exceeded! ");
+            } else {
+                alert("Invalid login. Try again ");
+            }
+        }
+
+       // vai para a próxima tentativa
+       //goes to the next attempt
+        currentAttempt = currentAttempt +1  
+    }
+
+</script>
