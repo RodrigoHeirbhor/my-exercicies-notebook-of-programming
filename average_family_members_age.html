@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>The average of age from my family members</h1>
+</head>
+<body>
+<br><br>
+<script>
+
+function skipTwoLines(){
+    document.write("<br><br>");
+}
+function display(phrase) {
+    document.write(phrase);
+    skipTwoLines();
+}
+
+var totalMembers = parseInt(prompt("What is your family members quantity? "));
+
+var number = 1;
+
+var totalAges = 0;
+
+while(number <= totalMembers) {
+    var age = parseInt(prompt("Insert the age from your family member "));
+    totalAges = totalAges + age;
+    number++;
+}
+
+var averageAges = totalAges/totalMembers;
+display("The average age from your family members is " + Math.round(averageAges));
+
+display("End");
+
+</script>
+</body>
+</html>
