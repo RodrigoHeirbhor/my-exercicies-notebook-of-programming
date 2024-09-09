@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html= lang="en">
     <head>
+<meta charset="UTF-8">
+<title>Pos Increment usin ++</title>        
 <h1>My Guessing Game 2 - The Post Increment ++</h1>
 <h3><big>Welcome returner's</big></h3>
     </head>
@@ -16,13 +18,24 @@
 }
     var thoughtNumber = Math.round(Math.random() * 10);
 
-    var kickBluff = parseInt(prompt("Insert your kick number! "));
+    var attempts = 1;
 
-    if(kickBluff == thoughtNumber) {
-        display("Your are got it right! ");
-    } else {
-        display("You wrong, I had thought the number " + thoughtNumber);
+    while(attempts <= 3) {
+
+        var kickBluff = parseInt(prompt("Insert your kick number! "));
+
+        if(kickBluff == thoughtNumber) {
+
+             display("<h3>" + "Your are got it right! The thought number was " + "</h3>" + thoughtNumber);
+
+        } else {
+
+             display("You were wrong, I'm not had thought this number ");
+        }
+        attempts++;
+    
     }
+    alert("You reached the max of attempts, reload the page and try again");
 </script>
 </body>
 </html>
