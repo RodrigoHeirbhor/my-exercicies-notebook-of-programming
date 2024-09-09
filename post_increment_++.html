@@ -2,7 +2,7 @@
 <html= lang="en">
     <head>
 <meta charset="UTF-8">
-<title>Pos Increment usin ++</title>        
+<title>Pos Increment using ++</title>        
 <h1>My Guessing Game 2 - The Post Increment ++</h1>
 <h3><big>Welcome returner's</big></h3>
     </head>
@@ -26,16 +26,25 @@
 
         if(kickBluff == thoughtNumber) {
 
-             display("<h3>" + "Your are got it right! The thought number was " + "</h3>" + thoughtNumber);
+             display("<h4>" + "Your are got it right! The thought number was " + "</h4>" + thoughtNumber);
+             break;
 
         } else {
 
              display("You were wrong, I'm not had thought this number ");
         }
         attempts++;
+
+        }
+        if (kickBluff != thoughtNumber) {
+
+            (alert("You have reached the max attempts, reload the page and try again "));
+        } else {
+            alert("You WON!, press OK to see your results");
+        }
     
-    }
-    alert("You reached the max of attempts, reload the page and try again");
+    display("End");
+
 </script>
 </body>
 </html>
