@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html= lang="en">
+    <head>
+<h1>My Guessing Game 2 - The Post Increment ++</h1>
+<h3><big>Welcome returner's</big></h3>
+    </head>
+<body>
+<script>
+    function skipTwoLines() {
+        document.write("<br><br>");
+}
+
+    function display(phrase) {
+        document.write(phrase);
+        skipTwoLines();
+}
+    var thoughtNumber = Math.round(Math.random() * 10);
+
+    var kickBluff = parseInt(prompt("Insert your kick number! "));
+
+    if(kickBluff == thoughtNumber) {
+        display("Your are got it right! ");
+    } else {
+        display("You wrong, I had thought the number " + thoughtNumber);
+    }
+</script>
+</body>
+</html>
