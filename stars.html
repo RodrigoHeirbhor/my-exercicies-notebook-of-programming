@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested repetitions | Repetições Aninhadas</title>
+</head>
+<body>
+<script>
+    function skipTwoLines() {
+        document.write("<br><br>");
+    }
+
+    function display(phrase) {
+        document.write(phrase);
+        skipTwoLines();
+    }
+
+    for(var line = 1; line <= 3; line++) {
+        
+       for(var column = 1; column <= 10; column++) {
+            document.write("*");
+    }
+    skipTwoLines();
+
+}
+</script>
+</body>
+</html>
