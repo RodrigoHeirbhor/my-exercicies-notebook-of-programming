@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>Guessing Game Plus</title>
+</head>
+<h1>Guessing Game Plus</h1>
+<Body>
+
+    <input/>
+    <button>Compare with my secret | Compare com o meu segredo</button>
+
+<script>
+
+var secret = 5;
+var input = document.querySelector("input");
+
+function verify() {
+    if(input.value == secret) {
+        alert("Congratulations! ​🥳​ You got it right!!! ");
+    } else {
+        alert("I'm sorry 😭​ you are wrong on! ");
+    }
+}
+
+var button = document.querySelector("button");
+
+button.onclick = verify
+
+</script>
+<br><br><br>
+Find out more emojis visiting this website <a href="https://emojikeyboard.top/pt/">Here</a>!
+</Body>
+</html>
