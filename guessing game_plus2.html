@@ -2,9 +2,9 @@
 <html lang="en">
 <meta charset="UTF-8">
 <head>
-    <title>Guessing Game Plus 2</title>
+    <title>Guessing Game Plus Array</title>
 </head>
-<h1>Guessing Game Plus 2</h1>
+<h1>Guessing Game Plus Array</h1>
 <Body>
 
     <input/>
@@ -12,16 +12,28 @@
 
 <script>
 
-var secret = Math.round(Math.random() * 10);
-var input = document.querySelector("input");
+    var secrets = [5,7,10,2,3];
+
+    var input = document.querySelector("input");
+    input.focus();
 
 function verify() {
-    if(input.value == secret) {
+
+    var found = false;
+
+    for( var position = 0; position < secrets.length; position++) {
+
+        if(input.value == secrets[position]) {
         alert("Congratulations! ​🥳​ You got it right!!! ");
-    } else {
+        found = true;
+        break;
+    } 
+    }
+    
+    if(found == false) {
         alert("I'm sorry 😭​ you are wrong on! ");
     }
-
+  
     input.value = "";
     input.focus();
 }
@@ -31,7 +43,7 @@ var button = document.querySelector("button");
 button.onclick = verify
 
 </script>
-<br><br><br>
-Find out more emojis visiting this website <a href="https://emojikeyboard.top/pt/">Here</a>!
+    <br><br><br>
+        Find out more emojis visiting this website <a href="https://emojikeyboard.top/pt/">Here</a>!
 </Body>
 </html>
